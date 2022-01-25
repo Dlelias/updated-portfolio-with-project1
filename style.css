@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* brand color palette */
+  :root {
+    --primary: white;
+    --secondary: #A3B18A;
+    --tertiary: rgba(49, 52, 61, 1);
+    --fourth: #d1b3c4;
+    --light: #A3B18A;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--primary);
+    background-color: var(--light);
+    line-height: 1.5;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  header {
+    padding: 15px 6% 15px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--tertiary);
+ }
+  
+  header h1 {
+    color: var(--tertiary);
+    background-color: var(--secondary);
+    padding: 5px 1% 5px 6%;
+    margin: 0;
+    font-size: 4vw;
+    line-height: 1;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-decoration: underline;
+  }
+  
+  nav a {
+    padding: 5px 10px;
+    color: var(--secondary);
+    margin-right: 10px;
+    transition: all 0.25s ease-in;
+    font-size: 1.4rem;
+  }
+  
+  nav a:hover {
+    background-size: 100% 100%;
+    color: var(--primary);
+  }
+  
+  nav a:last-child {
+    margin-right: 0;
+  }
+  
+  main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+  
+  .hero-banner {
+    background: #b392ac;
+    background-image: url("images/updatebg.jpeg");
+    background-size:cover;
+    background-position: center;
+    /* background-blend-mode: soft-light; */
+    min-height: 50vh;
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+  }
+  /* this is for  h2 header  */
+  .hero-banner div {
+    flex: 0 0 90%;
+  }
+  
+  .hero-banner h2 {
+    background-color: var(--secondary);
+    color: var(--tertiary);
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 2.3rem;
+    line-height: 1.2;
+    display: inline;
+  }
+  
+  .main-page {
+      max-width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  
+  .page-section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+  }
+  
+  /* FOR ABOUT ME WORK AND CONTACT ME H2 TAGS  */
+    .page-section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 5px;
+    border-right: 3px dashed var(--primary);
+    font-size: 4vw;
+    line-height: 1.5;
+  }
+  
+  
+  .page-section > div {
+    flex: 0 0 70%;
+  } 
+  
+  /* space between two paragraphs in about me section  */
+   .page-section p {
+    margin-bottom: 10px;
+  } 
+  
+
+  /* THIS IS FOR THE WORK CONTENT CONTAINERS */
+  .flex-item {
+    border: 5px solid var(--light);
+    background-color: var(--primary);
+    color: white;
+    min-height: 200px;
+    max-height: 200px;
+    display: flex;
+    align-items: flex-end;
+    margin: 10px;
+    text-decoration: underline;
+    /* background-blend-mode: soft-light; */
+    background-size: 150%;
+    transition: all 0.5s;
+  }
+  
+  .flex-item:first-child {
+      min-height: 400px;
+      flex-basis: 100%;
+  }
+  
+  .flex-item:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .flex-item div {
+    background-color: var(--secondary);
+    padding: 8px 10px;
+  }
+  
+  .section-contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+  }
+  
+  /* contact me information, phone number etc  */
+  .info {
+    color: var(--tertiary);
+    padding: 5px;
+    font-size: 1.3rem;
+    margin: 0 0.2rem 0.1rem;
+    display: inline-block;
+  }
+  
+  .info a:hover {
+    background-size: 100% 88%;
+    color: var(--secondary);
+  }
+  
+/* images in work containers */
+.passgen{
+    background-image: url("images/passwordgen.png");
+    background-size: cover;
+    background-position: center;
+}
+
+  
+  .quiz {
+    background-image: url("images/quizbg.jpeg");
+    background-size: cover;
+    background-position: center;
+  }
+  .wdscheduler{
+    background-image: url("images/workdayscheduler.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .weather{
+    background-image: url("images/weather.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .project{
+    background-image: url("images/roomfinders.png");
+    background-size: cover;
+    background-position: center;
+  }
+  @media screen and (max-width: 980px) {
+    header {
+      padding: 0 0 10px 0;
+      justify-content: center;
+      text-align: center;
+    } 
+  
+     header h1 {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      font-size: 10vw;
+    }
+  
+    header nav {
+      justify-content: center;
+    }
+  
+    .main-page > h2,
+    .main-page > div {
+      flex: 0 0 100%;
+     } 
+  
+    .main-page > h2 {
+      border-right: none;
+      border-bottom: 4px solid var(--primary);
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      text-align: left;
+      font-size: 5vw;
+    }
+  }
+  
+  /* media screen max 768 */
+   @media screen and (max-width: 768px) {
+    .flex-item,
+    .flex-item:first-child {
+      flex-basis: 100%;
+    }
+  
+    .flex-item:first-child {
+      min-height: 150px;
+    }
+  
+    .hero-banner {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .info {
+      flex-direction:row;
+     align-items: flex-start; 
+    }
+  }  
